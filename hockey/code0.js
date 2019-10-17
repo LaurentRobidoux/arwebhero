@@ -45,7 +45,7 @@ gdjs.MainCode.condition1IsTrue_0 = {val:false};
 gdjs.MainCode.condition2IsTrue_0 = {val:false};
 
 
-gdjs.MainCode.mapOfGDgdjs_46MainCode_46GDGlassObjects1Objects = Hashtable.newFrom({"Glass": gdjs.MainCode.GDGlassObjects1});gdjs.MainCode.mapOfGDgdjs_46MainCode_46GDPokeObjects1Objects = Hashtable.newFrom({"Poke": gdjs.MainCode.GDPokeObjects1});gdjs.MainCode.mapOfGDgdjs_46MainCode_46GDGoalObjects1Objects = Hashtable.newFrom({"Goal": gdjs.MainCode.GDGoalObjects1});gdjs.MainCode.eventsList0x87c1c4 = function(runtimeScene) {
+gdjs.MainCode.mapOfGDgdjs_46MainCode_46GDGlassObjects1Objects = Hashtable.newFrom({"Glass": gdjs.MainCode.GDGlassObjects1});gdjs.MainCode.mapOfGDgdjs_46MainCode_46GDPokeObjects1Objects = Hashtable.newFrom({"Poke": gdjs.MainCode.GDPokeObjects1});gdjs.MainCode.mapOfGDgdjs_46MainCode_46GDGoalObjects1Objects = Hashtable.newFrom({"Goal": gdjs.MainCode.GDGoalObjects1});gdjs.MainCode.eventsList0x87d5c4 = function(runtimeScene) {
 
 {
 
@@ -88,8 +88,8 @@ gdjs.MainCode.GDGoalObjects1.length = k;}if (gdjs.MainCode.condition0IsTrue_0.va
 }
 
 
-}; //End of gdjs.MainCode.eventsList0x87c1c4
-gdjs.MainCode.userFunc0x840b38 = function(runtimeScene, objects) {
+}; //End of gdjs.MainCode.eventsList0x87d5c4
+gdjs.MainCode.userFunc0x76bd30 = function(runtimeScene, objects) {
 "use strict";
 
 var score= objects[0];
@@ -177,7 +177,7 @@ gdjs.MainCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTes
 }
 }
 { //Subevents
-gdjs.MainCode.eventsList0x87c1c4(runtimeScene);} //End of subevents
+gdjs.MainCode.eventsList0x87d5c4(runtimeScene);} //End of subevents
 }
 
 }
@@ -189,7 +189,7 @@ gdjs.MainCode.GDScoreObjects1.createFrom(runtimeScene.getObjects("Score"));
 
 var objects = [];
 objects.push.apply(objects,gdjs.MainCode.GDScoreObjects1);
-gdjs.MainCode.userFunc0x840b38(runtimeScene, objects);
+gdjs.MainCode.userFunc0x76bd30(runtimeScene, objects);
 
 }
 
