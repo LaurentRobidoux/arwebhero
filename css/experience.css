@@ -1,0 +1,154 @@
+.sidebar {
+    position: absolute;
+    right: 0px;
+    top:0px;
+    height:100%;
+    width: 15%;
+    background-color:purple;
+    opacity: 0.6;
+    overflow-y: none;   
+ 
+    padding-top:10px;      
+    color:white; 
+}
+.sidebar .deg{
+    font-size:2.5em;
+}
+.sidebar a
+{
+    border:2px solid white;
+    border-radius: .25rem;
+    color:white;
+    padding: .375rem .75rem;
+    background-color: transparent;
+    display: inline-block;
+    text-align: center;
+    width: 50px;
+    
+}
+.sliderb {
+    
+    top: 2%;
+    height: 96%;
+ border-radius: 10px;
+    left:50%;
+    transform: translate(-50%, 0%);
+    border-bottom: 10px solid transparent!important;
+  }
+  .ui-slider-range
+{
+    width: 5px !important;
+    margin-left: 3px;
+    background-color:#FE8DC6;
+}
+.ui-slider-handle{
+    outline: none;
+}
+.col-4,.col-2
+{
+    padding: 0px;
+}
+.ui-slider-handle{
+    border-radius: 15px;
+}
+.acenter{
+    position: absolute;
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+ 
+    transform: translate(-50%, -50%);
+}
+
+  #modalShare
+  {
+      width: 50%;
+      height: 50%;
+ 
+    background-color:rgba(132, 5, 132,0.6);
+ 
+    text-align: center;
+    padding:10px;
+   
+}
+#modalShare p{
+    color:white;
+}
+#modalShare img
+{
+    width: 80%;
+    border:1px solid white;
+}
+  #portrait img
+  {
+  width: 100%;
+  }
+ #share
+ {  border:1px solid white;
+    border-radius: 15px;
+    
+ }
+  #share img
+  {
+      width: 100%;
+  }
+@media screen and (orientation:landscape) {
+    #portrait{
+        display: none;
+    }
+    #modalShare{
+        height: 80%;
+    }
+}
+.container
+{
+    position: absolute;
+    top:0px;
+}
+.cerclebtn img
+{
+    opacity: 0.6;
+}
+.cerclebtn
+{
+    background-color:rgba(132, 5, 132,0.6);
+ 
+       width: 100px;
+       border-radius: 50%;
+    height: 100px;
+    position:absolute;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    text-align: center;
+    
+}
+#take-photo{
+    bottom: 10px;
+    left: 10px;
+}
+#ar{
+    bottom: 10px;
+    right: 10px;
+}
+.acenter{
+    position: absolute;
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+ 
+    transform: translate(-50%, -50%);
+}
+.icon-photo
+{
+    position: absolute;
+ 
+    width: 90%;
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+ 
+    transform: translate(-50%, -50%);
+}
+#take-photo img
+{
+    width: 80%;
+}
+ 

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <title>Fonte des glaces</title>
+  <meta name="description" content="360&deg; Experience">
+  <!--for the slider-->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <!--end of for the slider-->
+  <script src="js/aframe.min.js"></script>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/experience.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <a-scene id="scene" vr-mode-ui="enabled: false">
+
+
+    <a-assets>
+      <img id="1" crossorigin="anonymous" src="360/1.jpg">
+      <img id="2" crossorigin="anonymous" src="360/2.jpg">
+      <img id="3" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/cubes.jpg">
+      <img id="4" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg">
+    </a-assets>
+
+    <a-sky id="back360" radius="10" src="#2"></a-sky>
+    <a-sky id="image-360" radius="10" src="#2"></a-sky>
+
+    <a-camera id="camera" wasd-controls="enabled:false;" cursor="rayOrigin: mouse">
+
+    </a-camera>
+
+  </a-scene>
+  <div class="sidebar row">
+
+    <div class="col-2">
+      <div class="sliderb" id="slider-vertical"></div>
+    </div>
+
+    <div class="col-2">
+      <div class=" deg">&deg;C</div>
+      <div>
+        <a id="share" href="#"><img src="img/share.svg"></a>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+  <div id="portrait" class="acenter"><img src="img/landscape.svg"></div>
+  <div class="acenter" id="modalShare" style="display:none;"><img src="">
+    <p>Maintenez votre doigt sur l'image pour la partager</p>
+
+  </div>
+
+</body>
+
+<script type="text/javascript" src="js/fonte.js"></script>
+
+</html>

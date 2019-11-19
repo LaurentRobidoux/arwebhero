@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <title>Expérience ours</title>
+  <meta name="description" content="360&deg; Experience">
+  <script type="text/javascript" src="/js/aframe.min.js"></script>
+  <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+  <link href="css/experience.css" rel="stylesheet">
+</head>
+
+<body>
+  <a-scene id="scene" vr-mode-ui="enabled: false">
+
+
+    <a-assets>
+      <img id="1" crossorigin="anonymous" src="360/1.jpg">
+      <a-asset-item id="arModel" src="model/cave.glb"></a-asset-item>
+    </a-assets>
+
+
+    <a-sky id="image-360" radius="10" src="#1">
+    </a-sky>
+    <a-entity id="cave" gltf-model="#arModel" position="0 0.59788 -4.68116" rotation="90 0 0" animation-mixer>
+    </a-entity>
+    <a-entity light="type: ambient; intensity: 1" castShadow:false;></a-entity>
+    <a-camera id="camera" wasd-controls="enabled:false;" cursor="rayOrigin: mouse">
+
+    </a-camera>
+
+  </a-scene>
+
+
+  
+  <div class="acenter" id="modalShare" style="display:none;"><img src="">
+    <p>Maintenez votre doigt sur l'image pour la partager</p>
+
+  </div>
+  <a href="#" id="take-photo" class="cerclebtn"><img class="icon-photo" src="img/photo-camera.svg"></a>
+  <a href="bear_ar.html" id="ar" class="cerclebtn"><img class="icon-photo" src="img/ar.png"></a>
+</body>
+
+<script type="text/javascript" src="/js/bear360.js"></script>
+</html>
